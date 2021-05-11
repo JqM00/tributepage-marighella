@@ -1,0 +1,110 @@
+html { 
+  font-size: 20px;
+  }
+  @media (min-width: 480px){
+    main {
+      font-family: Roboto;
+      background-color: #dedede;
+    }
+  }
+  h1 {
+    font-family: Anton;
+    font-size: 60px;
+    text-align: center;
+    margin: 30px;
+  }
+  h2 {
+    font-family: roboto;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px #FF0000;
+  }
+  
+  h3 {
+    font-family: ubuntu;
+    text-decoration: underline;
+  }
+  h5 {
+    font-family: roboto;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  h6{
+    font-family: ubuntu;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+  p{
+    text-align: justify;
+    margin: 5px 20px 5px 20px
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  #img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  #img-caption {
+    font-family: roboto;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+  }
+  #anim {
+    animation-name: colorful;
+    animation-duration: 5s;
+  }
+  @keyframes colorful {
+    0% {
+      background-color: yellow;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+  a:hover{
+    color: #190ef4;
+  }
